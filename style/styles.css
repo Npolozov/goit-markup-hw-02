@@ -1,6 +1,11 @@
+:root {
+  --primary-text-color: #757575;
+  --accent-color: #2196f3;
+  --text-title-color: #212121;
+}
 body {
   background-color: white;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 ul {
   list-style: none;
@@ -8,9 +13,51 @@ ul {
 
 /* Site-nav */
 .site-nav .link {
-  color: #212121;
+  color: var(--text-title-color);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
+}
+.site-nav .link.curent {
+  color: var(--accent-color);
+}
+
+.site-contact .link {
+  color: var(--text-title-color);
+}
+.site-contact .link:hover,
+.site-contact .link:focus {
+  color: var(--accent-color);
+}
+
+/* страничка index.html */
+/* Hero */
+/* [type] {
+  color: white;
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+} */
+
+.hero .title {
+  color: var(--text-title-color);
+}
+
+/* peculiarities */
+.feature-list .title {
+  color: var(--text-title-color);
+}
+/* About */
+.about .title {
+  color: var(--text-title-color);
+}
+/* About team */
+.about-team .title {
+  color: var(--text-title-color);
 }
