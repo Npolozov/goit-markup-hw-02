@@ -3,20 +3,51 @@
   --accent-color: #2196f3;
   --text-title-color: #212121;
 }
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
 body {
   background-color: white;
   color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.03em;
 }
 ul {
   list-style: none;
 }
 
-/* Site-nav */
-.site-nav .link {
+/* Logo */
+.logo,
+.footer-logo {
   color: var(--text-title-color);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.9;
+  text-decoration: none;
+}
+.logo-accent {
+  color: var(--accent-color);
+}
+
+/* Site-nav */
+.site-nav .link,
+.contact-footer .link {
+  color: var(--text-title-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 .site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link:focus,
+.contact-footer .link:hover,
+.contact-footer .link:focus {
   color: var(--accent-color);
 }
 .site-nav .link.curent {
@@ -24,7 +55,12 @@ ul {
 }
 
 .site-contact .link {
-  color: var(--text-title-color);
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 .site-contact .link:hover,
 .site-contact .link:focus {
@@ -33,7 +69,7 @@ ul {
 
 /* страничка index.html */
 /* Hero */
-/* [type] {
+/* .hero-button {
   color: white;
   position: absolute;
   width: 200px;
@@ -45,19 +81,109 @@ ul {
   border-radius: 4px;
 } */
 
+.hero {
+  background-color: #2f303a;
+}
+
 .hero .title {
-  color: var(--text-title-color);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #ffffff;
 }
 
 /* peculiarities */
 .feature-list .title {
   color: var(--text-title-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.feature-list .paragraf {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
 }
 /* About */
 .about .title {
   color: var(--text-title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
 }
 /* About team */
 .about-team .title {
   color: var(--text-title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+.about-team .name {
+  color: var(--text-title-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.about-team .profession {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1;
+
+  text-align: center;
+}
+
+/* footer */
+
+.footer {
+  background-color: #2f303a;
+}
+.footer-logo-accent {
+  color: white;
+}
+.contact-footer .link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.6);
+}
+.address {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #ffffff;
+}
+/* portfolio.html */
+.bottons {
+  cursor: pointer;
+}
+.bottons:hover,
+.bottons:focus {
+  color: white;
+  background-color: var(--accent-color);
+}
+.list-projects .project {
+  color: var(--text-title-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+
+.list-projects .diction {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
 }
