@@ -154,12 +154,14 @@ ul {
   color: white;
 }
 .contact-footer .link {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4;
   color: rgba(255, 255, 255, 0.6);
 }
 .address {
+  font-style: normal;
   text-decoration: none;
   font-size: 14px;
   line-height: 1.7;
