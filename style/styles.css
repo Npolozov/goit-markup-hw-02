@@ -2,6 +2,7 @@
   --primary-text-color: #757575;
   --accent-color: #2196f3;
   --text-title-color: #212121;
+  --text-bottons-color: white;
 }
 
 .visually-hidden {
@@ -12,7 +13,7 @@ body {
   background-color: white;
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
-  font-weight: 400;
+  font-size: 14px;
   letter-spacing: 0.03em;
 }
 ul {
@@ -69,17 +70,23 @@ ul {
 
 /* страничка index.html */
 /* Hero */
-/* .hero-button {
-  color: white;
-  position: absolute;
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 430px;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-} */
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--text-bottons-color);
+  background-color: var(--accent-color);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--text-title-color);
+  background-color: var(--text-bottons-color);
+}
 
 .hero {
   background-color: #2f303a;
@@ -94,7 +101,7 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--text-bottons-color);
 }
 
 /* peculiarities */
@@ -108,7 +115,6 @@ ul {
 }
 
 .feature-list .paragraf {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
 }
@@ -138,10 +144,8 @@ ul {
 
 .about-team .profession {
   color: var(--primary-text-color);
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.1;
-
   text-align: center;
 }
 
@@ -151,11 +155,10 @@ ul {
   background-color: #2f303a;
 }
 .footer-logo-accent {
-  color: white;
+  color: var(--text-bottons-color);
 }
 .contact-footer .link {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.4;
   color: rgba(255, 255, 255, 0.6);
@@ -165,27 +168,38 @@ ul {
   text-decoration: none;
   font-size: 14px;
   line-height: 1.7;
-  color: #ffffff;
+  color: var(--text-bottons-color);
 }
 /* portfolio.html */
 .bottons {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-title-color);
   cursor: pointer;
 }
 .bottons:hover,
 .bottons:focus {
-  color: white;
+  color: var(--text-bottons-color);
   background-color: var(--accent-color);
 }
 .list-projects .project {
   color: var(--text-title-color);
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   letter-spacing: 0.06em;
+  text-decoration: none;
 }
 
 .list-projects .diction {
-  font-weight: 400;
+  color: var(--primary-text-color);
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.8;
+}
+
+.list-projects a {
+  text-decoration: none;
 }
