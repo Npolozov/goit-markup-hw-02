@@ -36,8 +36,7 @@ ul {
 }
 
 /* Site-nav */
-.site-nav .link,
-.contact-footer .link {
+.site-nav .link {
   color: var(--text-title-color);
   font-weight: 500;
   font-size: 14px;
@@ -158,10 +157,11 @@ ul {
   color: var(--text-bottons-color);
 }
 .contact-footer .link {
-  font-style: normal;
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-style: normal;
 }
 .address {
   font-style: normal;
